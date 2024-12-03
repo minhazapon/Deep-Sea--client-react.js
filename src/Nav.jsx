@@ -1,3 +1,6 @@
+
+//https://img.stablecog.com/insecure/1920w/aHR0cHM6Ly9iLnN0YWJsZWNvZy5jb20vNzQwN2ZiZjgtYTkzYy00MzIwLWFkYzktZTQzYTljNDQ0ZTg1LmpwZWc.webp
+
 import { NavLink } from "react-router-dom";
 
 
@@ -5,13 +8,13 @@ const Nav = () => {
 
    const  nav = <>
    
-    <li className=" sea text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/' >HOME</NavLink></li>
-    <li className=" sea text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/about' >ABOUT</NavLink></li>
-    <li className=" sea text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/service' >SERVICE</NavLink></li>
-    <li className=" sea text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/work' >WORK</NavLink></li>
-    <li className=" sea text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/page' >PAGE</NavLink></li>
-    <li className=" sea text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/blog' >BLOG</NavLink></li>
-    <li className=" sea text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/contact' >CONTACT</NavLink></li>
+    <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/' >HOME</NavLink></li>
+    <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/about' >ABOUT</NavLink></li>
+    <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/service' >SERVICE</NavLink></li>
+    <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/work' >WORK</NavLink></li>
+    <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/page' >PAGE</NavLink></li>
+    <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/blog' >BLOG</NavLink></li>
+    <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/contact' >CONTACT</NavLink></li>
    
    
    
@@ -52,7 +55,7 @@ const Nav = () => {
             <div className=" flex items-center gap-2 ">
                
             <img className=" h-[50px] " src="https://webdesign-finder.com/deepdigital-ai-v2/wp-content/uploads/2023/06/logo_AI.png" alt="" />
-            <a className=" text-2xl sea text-white  ">Deep <span className=" text-[#40F8FF] ">Sea</span></a>
+            <a className=" text-2xl deep text-white  ">Deep <span className=" text-[#40F8FF] ">Sea</span></a>
 
             </div>
             
@@ -63,7 +66,7 @@ const Nav = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <a className=" text-xl sea text-white"><span className=" text-[#40F8FF] ">01950</span>374409</a>
+            <a className=" text-xl deep text-white"><span className=" text-[#40F8FF] ">01950</span>374409</a>
           </div>
         </div>
             
