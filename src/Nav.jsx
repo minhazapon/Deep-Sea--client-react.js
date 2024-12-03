@@ -1,14 +1,35 @@
+import { NavLink } from "react-router-dom";
 
 
 const Nav = () => {
+
+   const  nav = <>
+   
+    <li className=" sea text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/' >HOME</NavLink></li>
+    <li className=" sea text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/about' >ABOUT</NavLink></li>
+    <li className=" sea text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/service' >SERVICE</NavLink></li>
+    <li className=" sea text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/work' >WORK</NavLink></li>
+    <li className=" sea text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/page' >PAGE</NavLink></li>
+    <li className=" sea text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/blog' >BLOG</NavLink></li>
+    <li className=" sea text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/contact' >CONTACT</NavLink></li>
+   
+   
+   
+   
+   </>
+
+
+
+
+
     return (
         <div>
 
 
-        <div className="navbar bg-base-100 shadow p-10">
+        <div className="navbar bg-black shadow p-10">
           <div className="navbar-start">
             <div className="dropdown">
-              <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <div tabIndex={0} role="button" className=" text-white btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -24,43 +45,25 @@ const Nav = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                <li><a>Item 1</a></li>
-                <li>
-                  <a>Parent</a>
-                  <ul className="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </li>
-                <li><a>Item 3</a></li>
+                className=" bg-black menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+               {nav}
               </ul>
             </div>
             <div className=" flex items-center gap-2 ">
                
             <img className=" h-[50px] " src="https://webdesign-finder.com/deepdigital-ai-v2/wp-content/uploads/2023/06/logo_AI.png" alt="" />
-            <a className=" text-2xl sea ">Deep Sea</a>
+            <a className=" text-2xl sea text-white  ">Deep <span className=" text-[#40F8FF] ">Sea</span></a>
 
             </div>
             
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
-              <li><a>Item 1</a></li>
-              <li>
-                <details>
-                  <summary>Parent</summary>
-                  <ul className="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </details>
-              </li>
-              <li><a>Item 3</a></li>
+            {nav}
             </ul>
           </div>
           <div className="navbar-end">
-            <a className="btn">Button</a>
+            <a className=" text-xl sea text-white"><span className=" text-[#40F8FF] ">01950</span>374409</a>
           </div>
         </div>
             
