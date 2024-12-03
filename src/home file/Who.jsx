@@ -6,11 +6,13 @@ const Who = () => {
         <div className=" mt-20 mb-20 ml-16 mr-16  ">
 
 
-            <div className=" flex justify-between items-center gap-10">
+            <div className=" flex-col md:flex-row lg:flex-grow flex justify-between items-center gap-10">
 
                <div>
                   <img className=" h-[600px]" src="https://webdesign-finder.com/deepdigital-ai-v2/wp-content/uploads/2023/06/img_72.png" alt="" />
                </div>
+               
+               <div className=" flex justify-center ">
 
                <div>
                 <p className=" deep text-6xl">Who We Are</p>
@@ -45,6 +47,9 @@ const Who = () => {
 
                </div>
                </div>
+
+               </div>
+               
               
 
 
