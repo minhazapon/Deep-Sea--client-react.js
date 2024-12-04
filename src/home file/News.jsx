@@ -37,7 +37,7 @@ const News = () => {
               
             <div>
 
-            <div className=' flex justify-center items-center gap-10'>
+            <div className=' flex-col md:flex-row lg:flex-row flex justify-center items-center gap-10'>
 
             <div className=" bg-base-100 w-96 shadow-xl border-[1px] ">
             <figure className="">
@@ -80,7 +80,7 @@ const News = () => {
             </SwiperSlide>
             <SwiperSlide>
             <div>
-            <div className=' flex justify-center items-center gap-10'>
+            <div className=' flex-col md:flex-row lg:flex-row flex justify-center items-center gap-10'>
             <div className=" bg-base-100 w-96 shadow-xl border-[1px] ">
             <figure className="">
             <img

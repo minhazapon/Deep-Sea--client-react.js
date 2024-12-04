@@ -1,3 +1,4 @@
+import ContactForm from "./home file/ContactForm";
 import HomeBanner from "./home file/HomeBanner";
 import News from "./home file/News";
 import OurProcess from "./home file/OurProcess";
@@ -17,6 +18,7 @@ const Home = () => {
             <OurProcess></OurProcess>
             <Project></Project>
             <News></News>
+            <ContactForm></ContactForm>
             
         </div>
     );
