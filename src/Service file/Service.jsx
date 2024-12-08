@@ -1,4 +1,5 @@
 import ServiceBanner from "./ServiceBanner";
+import ServiceForm from "./ServiceForm";
 import ServiceType from "./ServiceType";
 
 
@@ -11,6 +12,7 @@ const Service = () => {
              
              <ServiceBanner></ServiceBanner>
              <ServiceType></ServiceType>
+             <ServiceForm></ServiceForm>
 
         
             
