@@ -11,6 +11,7 @@ import Root from './Root';
 import Home from './Home';
 import About from './about file/About';
 import Service from './Service file/Service';
+import Work from './work file/Work';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/service",
         element: <Service></Service>  ,
+      },
+      {
+        path: "/work",
+        element: <Work></Work>  ,
       },
     ],
   },
