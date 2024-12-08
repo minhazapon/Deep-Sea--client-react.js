@@ -13,8 +13,6 @@ const Type = () => {
         >
 
             <div className="   ml-16 mr-16 flex justify-center ">
-
-
               <div className="  text-white grid  md:grid-cols-3 gap-32 ">
 
                  
@@ -70,18 +68,8 @@ const Type = () => {
                  <p className=" text-center mt-5 deep text-xl ">Social Impact</p>
                  <p className=" text-center mt-5 deep  text-gray-200 ">Lorem ipsum dolor amet, consectetur<br></br> adipisicing elit sed</p>
                  </div>
-               
-               
-
-
-
+              
               </div>
-
-
-
-
-
-
             </div>
             
         </div>

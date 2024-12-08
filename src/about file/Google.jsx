@@ -2,8 +2,16 @@
 
 
 const Google = () => {
+    
     return (
-        <div>
+        <div  className=" mt-10 ml-16 mr-16 " >
+
+            <div>
+
+
+
+
+            </div>
             
         </div>
     );
