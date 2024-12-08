@@ -4,7 +4,7 @@
 const Ceo = () => {
 
     return (
-        <div className=" mt-20 ">
+        <div className=" mt-20 ml-20 mr-20 mb-10 ">
 
             <div>
                 
@@ -16,7 +16,7 @@ const Ceo = () => {
 
              
 
-                <div className=" flex justify-center  items-center gap-20 mt-10 ">
+                <div className=" flex-col md:flex-row lg:flex-row flex justify-between  items-center gap-20 mt-10 ">
 
 
                 <div>
