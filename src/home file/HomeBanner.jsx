@@ -32,27 +32,18 @@ const HomeBanner = () => {
 
 
             <div className=" flex-col md:flex-row lg:flex-row mt-10 flex  justify-between items-center">
- 
-                
-            
-                <div className=" bg-black p-14 w-full opacity-80  ">
+                <div className=" p-14 w-full banner-bg   ">
                    <p className=" text-xl text-cyan-400 deep ">Events</p>
                    <p className=" text-xl deep text-white mt-5 ">Stet clita kasd gubergren sea takimata</p>
                    <p className=" deep mt-5 text-gray-500 ">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing<br></br> elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
                    <p className=" text-xl deep text-cyan-400 mt-5 cursor-pointer ">View Calender</p>
                 </div>
-                
-               
-
-                <div className=" bg-cyan-700 p-14 w-full opacity-80 ">
+                <div className=" bg-cyan-700 p-14 w-full banner-bg-1  ">
                    <p className=" text-xl text-cyan-400 deep ">News</p>
                    <p className=" text-xl deep text-white mt-5 ">Sample Post</p>
                    <p className=" deep mt-5 text-gray-300 ">Leads. Leads. Leads. If lead generation is<br></br> one of the main goals of your marketing</p>
                    <p className=" text-xl deep text-cyan-400 mt-5 cursor-pointer  ">Read More</p>
                 </div>
-
-
-
             </div>
             
         </div>

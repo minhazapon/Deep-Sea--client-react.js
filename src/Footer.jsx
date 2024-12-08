@@ -36,12 +36,12 @@ const Footer = () => {
                 <p><FaTwitter className=" h-[30px] w-[30px] text-cyan-400 "></FaTwitter></p>
                 <p className=" deep text-xl text-gray-300 ">twitter</p>
                 </div>
-                <p className=" mt-3 h-[1px] w-[200px] bg-gray-500 "></p>
+                <p className=" mt-3 h-[1px] w-[200px] bg-gray-300 "></p>
                 <div className=" mt-3 flex items-center gap-2">
                 <p><AiFillFacebook className=" h-[30px] w-[30px] text-blue-700 "></AiFillFacebook></p>
                 <p className=" deep text-xl text-gray-300 ">Facebook</p>
                 </div>
-                <p className=" mt-3 h-[1px] w-[200px] bg-gray-500 "></p>
+                <p className=" mt-3 h-[1px] w-[200px] bg-gray-300 "></p>
                 <div className=" mt-3 flex items-center gap-2">
                 <p><FaYoutube className=" h-[30px] w-[30px] text-red-600"></FaYoutube></p>
                 <p className=" deep text-xl text-gray-300 ">You tube</p>
