@@ -13,6 +13,7 @@ const Nav = () => {
     <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/work' >WORK</NavLink></li>
     <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/page' >PAGE</NavLink></li>
     <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/blog' >BLOG</NavLink></li>
+    <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/add' >Add Products</NavLink></li>
    </>
 
 
