@@ -12,6 +12,20 @@ import Home from './Home';
 import About from './about file/About';
 import Service from './Service file/Service';
 import Work from './work file/Work';
+import Page from './page file/Page';
+
+
+import {
+  // useQuery,
+  // useMutation,
+  // useQueryClient,
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
+
+
+// Create a client
+const queryClient = new QueryClient()
 
 const router = createBrowserRouter([
   {
@@ -34,12 +48,19 @@ const router = createBrowserRouter([
         path: "/work",
         element: <Work></Work>  ,
       },
+      {
+        path: "/page",
+        element:  <Page></Page> ,
+      },
     ],
   },
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <QueryClientProvider client={queryClient}>
     <RouterProvider router={router} />
+    </QueryClientProvider>
+    
   </StrictMode>,
 )
