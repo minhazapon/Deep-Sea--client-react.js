@@ -7,18 +7,12 @@ import { NavLink } from "react-router-dom";
 const Nav = () => {
 
    const  nav = <>
-   
     <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/' >HOME</NavLink></li>
     <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/about' >ABOUT</NavLink></li>
     <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/service' >SERVICE</NavLink></li>
     <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/work' >WORK</NavLink></li>
     <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/page' >PAGE</NavLink></li>
     <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/blog' >BLOG</NavLink></li>
-    <li className=" deep text-white hover:border-[1px] border-cyan-400 " ><NavLink  to='/contact' >CONTACT</NavLink></li>
-   
-   
-   
-   
    </>
 
 
@@ -66,7 +60,7 @@ const Nav = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <a className=" text-xl deep text-white"><span className=" text-[#40F8FF] ">01950</span>374409</a>
+            <a className="  deep text-white  btn bg-black border-[1x] border-[#40F8FF]  ">Sign In</a>
           </div>
         </div>
             

@@ -22,6 +22,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
+import Blog from './blog file/Blog';
 
 
 // Create a client
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "/page",
         element:  <Page></Page> ,
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog> ,
       },
     ],
   },
