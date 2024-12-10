@@ -16,7 +16,9 @@ const AddForm = () => {
      const name = form.name.value
      const price = form.price.value
      const type = form.type.value
-     const allValue = { image, name, price, type }
+     const textarea = form.textarea.value
+
+     const allValue = { image, name, price, type, textarea }
 
      fetch('http://localhost:5000/seaData',{
       

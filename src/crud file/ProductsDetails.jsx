@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
@@ -69,7 +70,11 @@ const ProductsDetails = ({query}) => {
                 <p className=" deep "> {price} </p>
                 <div className="card-actions">
                   <button className="btn deep bg-cyan-500 text-white ">Buy Now</button>  
+                   
+                  <Link  to={`/update/${_id}`} >
                   <button className="btn deep bg-cyan-500 text-white ">Update</button>
+                  </Link>  
+                 
                   <button onClick={() => handleDelete(query._id) } className="btn deep bg-cyan-500 text-white ">Delete</button>
                 </div>
               </div>
