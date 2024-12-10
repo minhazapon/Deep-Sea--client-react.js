@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import ProductsDetails from "./ProductsDetails";
 
 
 
@@ -21,8 +22,20 @@ const YourProducts = () => {
     return (
         <div className=" mt-20 mb-20 ml-10 mr-10 ">
 
-            <div>
+            <div className=" flex justify-center ">
 
+             
+                
+                <div className=" grid  md:grid-cols-3 gap-10 ">
+                       
+                       {
+                           
+                           query?.map( query =>  <ProductsDetails  query={query} ></ProductsDetails>  )
+
+
+                       }
+
+                </div>
 
               
 
