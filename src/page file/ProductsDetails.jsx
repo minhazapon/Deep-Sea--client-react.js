@@ -1,5 +1,6 @@
 
 import { TiShoppingCart } from "react-icons/ti";
+import { Link } from "react-router-dom";
 
 
 
@@ -22,7 +23,9 @@ const ProductsDetails = ({query}) => {
                 <div className="card-actions justify-end">
                   <div className=" flex items-center  gap-3 ">
                   <p><TiShoppingCart className=" h-[30px] w-[30px] text-cyan-400 "></TiShoppingCart></p> 
+                  <Link to='/add' >
                   <button className="btn  text-white bg-cyan-600 deep ">Add Cart</button>
+                  </Link>
                   </div>  
                 </div>
               </div>

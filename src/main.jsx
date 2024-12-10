@@ -24,6 +24,7 @@ import {
 } from '@tanstack/react-query'
 import Blog from './blog file/Blog';
 import AddForm from './crud file/AddForm';
+import YourProducts from './crud file/YourProducts';
 
 
 // Create a client
@@ -59,8 +60,12 @@ const router = createBrowserRouter([
         element: <Blog></Blog> ,
       },
       {
+        path: "/yourProducts",
+        element: <YourProducts></YourProducts>   ,
+      },
+      {
         path: "/add",
-        element: <AddForm></AddForm>   ,
+        element: <AddForm></AddForm>  ,
       },
     ],
   },
