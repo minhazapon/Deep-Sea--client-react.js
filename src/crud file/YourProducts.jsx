@@ -11,7 +11,7 @@ const YourProducts = () => {
         queryKey: ['data'],
         queryFn: async () => {
            
-            const res = await fetch('http://localhost:5000/seaData')
+            const res = await fetch('https://deepsea-server-express-js.onrender.com/seaData')
             return res.json()
     
         }

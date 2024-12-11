@@ -20,7 +20,7 @@ const AddForm = () => {
 
      const allValue = { image, name, price, type, textarea }
 
-     fetch('http://localhost:5000/seaData',{
+     fetch('https://deepsea-server-express-js.onrender.com/seaData',{
       
       method: 'POST',
       headers: {

@@ -23,7 +23,7 @@ const ProductsDetails = ({query}) => {
           }).then((result) => {
             if (result.isConfirmed) {
                
-                fetch(`http://localhost:5000/seaData/${_id}`, {
+                fetch(`https://deepsea-server-express-js.onrender.com/seaData/${_id}`, {
 
                   method: 'DELETE',
                 })

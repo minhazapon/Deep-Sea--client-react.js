@@ -3,6 +3,7 @@ import ProductsDetails from "./ProductsDetails";
 
 
 
+
 const PageProducts = () => {
    
 
@@ -11,13 +12,12 @@ const PageProducts = () => {
         queryKey:['query'],
         queryFn: async () => {
              
-            const res = await fetch('http://localhost:5000/deepData')
+            const res = await fetch('https://deepsea-server-express-js.onrender.com/deepData')
             return res.json()
   
         }
 
     })
-
 
 
     return (
@@ -29,7 +29,7 @@ const PageProducts = () => {
                   
                    {
 
-                        query?.map( query => <ProductsDetails query={query} ></ProductsDetails>  )
+                   query?.map( query => <ProductsDetails query={query} ></ProductsDetails>  )
 
                    }
 

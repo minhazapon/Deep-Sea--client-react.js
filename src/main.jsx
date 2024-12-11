@@ -72,7 +72,7 @@ const router = createBrowserRouter([
       {
         path: "/update/:id",
         element: <UpdateForm></UpdateForm>  ,
-        loader: ({params}) => fetch(`http://localhost:5000/seaData/${params.id}`)
+        loader: ({params}) => fetch(`https://deepsea-server-express-js.onrender.com/seaData/${params.id}`)
       },
       {
         path: "/pay",

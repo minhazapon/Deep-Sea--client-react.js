@@ -23,7 +23,7 @@ const UpdateForm = () => {
         const textarea = form.textarea.value
         const allValue = { image, name, price, type, textarea }
 
-        fetch(`http://localhost:5000/seaData/${_id}`, {
+        fetch(`https://deepsea-server-express-js.onrender.com/seaData/${_id}`, {
 
           method: 'PUT',
           headers:{
