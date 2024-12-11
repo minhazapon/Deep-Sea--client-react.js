@@ -53,7 +53,7 @@ const UpdateForm = () => {
             <div className=" mt-20 mb-20 ml-5 mr-5 ">
             <div class="mx-14 mt-10 border-2 border-cyan-500 rounded-lg">
             <div class="mt-10 text-center font-bold"></div>
-            <div class="mt-3 text-center text-4xl font-bold deep ">Add Your <span className=" text-cyan-400 ">Products</span></div>
+            <div class="mt-3 text-center text-4xl font-bold deep ">Update Your <span className=" text-cyan-400 ">Products</span></div>
             <div class="p-8">
             <form  onSubmit={handleUpdate} >
             <div class="flex gap-4">
@@ -65,10 +65,10 @@ const UpdateForm = () => {
             <input defaultValue={type}  required type="text" name="type"  class="block w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-300 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm" placeholder="Type" />
             </div>
             <div class="">
-            <textarea defaultValue={textarea} required name="textarea" id="text" cols="30" rows="10" class="mb-10 h-40 w-full resize-none rounded-md border border-slate-300 p-5 font-semibold text-gray-300">Message</textarea>
+            <textarea  required name="textarea" id="text" cols="30" rows="10" class="mb-10 h-40 w-full resize-none rounded-md border border-slate-300 p-5 font-semibold text-gray-300">Message</textarea>
             </div>
             <div class="text-center">
-            <input type="submit" className="cursor-pointer deep rounded-lg bg-cyan-600 px-8 py-5 text-sm font-semibold text-white" value="Add Products" />
+            <input type="submit" className="cursor-pointer deep rounded-lg bg-cyan-600 px-8 py-5 text-sm font-semibold text-white" value="Update Products" />
             </div>
             </form>  
             </div>

@@ -1,7 +1,45 @@
+import Swal from "sweetalert2";
 
 
 
 const Who = () => {
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        
+        const formData = new FormData(event.target);
+    
+        formData.append("access_key", "e87151e8-7baa-471d-b58a-0bd71fe1cd67");
+    
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        });
+    
+        const data = await response.json();
+    
+        if (data.success) {
+            Swal.fire({
+                title: 'Success!',
+                text: 'Do you want to continue',
+                icon: 'success',
+                confirmButtonText: 'Cool'
+              })
+          event.target.reset();
+        } else {
+            Swal.fire({
+                title: 'Error!',
+                text: 'Do you want to continue',
+                icon: 'error',
+                confirmButtonText: 'Cool'
+              })
+          setResult(data.message);
+        }
+      };
+    
+
+
+
     return (
         <div className=" mt-20 mb-20 ml-16 mr-16  ">
 
@@ -19,7 +57,7 @@ const Who = () => {
                <p className=" mt-14 deep "><span className=" text-cyan-400">Just Call Me Now</span> or <span className=" text-cyan-400">Request a Call</span></p>
                <p className=" text-xl mt-7 deep ">1-800-123-4567 <span className=" text-cyan-400 ">&</span> 1-800-123-4568</p>
                <div className="  mt-6 flex justify-start">
-               <form class="max-w-sm ">
+               <form onSubmit={onSubmit} class="max-w-sm ">
                <label for="phone-input" class=" deep block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number:</label>
                <div class="relative">
                <div class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none">
@@ -27,7 +65,7 @@ const Who = () => {
                <path d="M18 13.446a3.02 3.02 0 0 0-.946-1.985l-1.4-1.4a3.054 3.054 0 0 0-4.218 0l-.7.7a.983.983 0 0 1-1.39 0l-2.1-2.1a.983.983 0 0 1 0-1.389l.7-.7a2.98 2.98 0 0 0 0-4.217l-1.4-1.4a2.824 2.824 0 0 0-4.218 0c-3.619 3.619-3 8.229 1.752 12.979C6.785 16.639 9.45 18 11.912 18a7.175 7.175 0 0 0 5.139-2.325A2.9 2.9 0 0 0 18 13.446Z"/>
                </svg>
                </div>
-               <input type="text" id="phone-input" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required />
+               <input type="text" id="phone-input"  name="Number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  placeholder="123-456-7890" required />
                </div>
                <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400 deep ">Select a phone number that matches the format.</p>
                <div>
