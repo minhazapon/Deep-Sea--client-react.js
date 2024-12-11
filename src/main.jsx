@@ -26,6 +26,7 @@ import Blog from './blog file/Blog';
 import AddForm from './crud file/AddForm';
 import YourProducts from './crud file/YourProducts';
 import UpdateForm from './crud file/UpdateForm';
+import Pay from './payment file/Pay';
 
 
 // Create a client
@@ -72,6 +73,10 @@ const router = createBrowserRouter([
         path: "/update/:id",
         element: <UpdateForm></UpdateForm>  ,
         loader: ({params}) => fetch(`http://localhost:5000/seaData/${params.id}`)
+      },
+      {
+        path: "/pay",
+        element: <Pay></Pay>  ,
       },
     ],
   },

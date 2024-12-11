@@ -69,12 +69,12 @@ const ProductsDetails = ({query}) => {
                 <h2 className="card-title deep "> {name}  </h2>
                 <p className=" deep "> {price} </p>
                 <div className="card-actions">
+                  <Link to='/pay' >
                   <button className="btn deep bg-cyan-500 text-white ">Buy Now</button>  
-                   
+                  </Link>
                   <Link  to={`/update/${_id}`} >
                   <button className="btn deep bg-cyan-500 text-white ">Update</button>
                   </Link>  
-                 
                   <button onClick={() => handleDelete(query._id) } className="btn deep bg-cyan-500 text-white ">Delete</button>
                 </div>
               </div>
